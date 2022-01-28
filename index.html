@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+  <h1 class="h1">Velg de PC-Delene du ønsker</h1>
+
+  <div class="img-container" id="img-container">
+      <div class="img" id="img-1" onclick="selectItems(this)"><img  src="png/CPU.png" alt="CPU"></div>
+      <div class="img" id="img-2" onclick="selectItems(this)"><img  src="png/GPU.png" alt="GPU"></div>
+      <div class="img" id="img-3" onclick="selectItems(this)"><img  src="png/PSU.png" alt="PSU"></div>
+      <div class="img" id="img-4" onclick="selectItems(this)"><img  src="png/SSD.png" alt="SSD"></div>
+      <div class="img" id="img-5" onclick="selectItems(this)"><img  src="png/RAM_brikke.png" alt="RAM_brikke"></div>
+  </div>
+
+  <div class="btn-wrapper"><button id="btnShow" class="btn" onclick="displayItems()" >Show Selected</button></div> 
+  <hr class="hr">
+  <div class="btn-wrapper"><button id="btnReset" class="btn" onclick="resetItems()">Reset List</button></div>
+
+  <div id="result-container" class="result-container"></div>
+  <script src="app.js"></script>
+</body>
+</html> 
